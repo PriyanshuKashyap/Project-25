@@ -19,9 +19,9 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
+	ground = new Ground();
 	paper = new Paper();
 	dustbin = new Dustbin();
-	ground = new Ground();
 
 	//paperSprite = createSprite(paper.body.position.x, paper.body.position.y, 50, 50);
 	//count = 0;
@@ -43,8 +43,8 @@ function draw() {
   
   if (keyCode === UP_ARROW) {
 	  //count++;
-	  Body.applyForce(paper.body, paper.body.position, {x: 10, y: 10});//Applying force until the ball is in the middle of the canvas
-
+	  Body.applyForce(paper.body, paper.body.position, {x: 130, y: -145});//Applying force until the ball is in the middle of the canvas
+	  
 	  /*if (count === 25) {
 		  Body.applyForce(paper.body, paper.body.position, {x: 2, y: 6});//Applying force to throw the ball to the dustbin
 	  }*/
