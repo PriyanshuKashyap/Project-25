@@ -3,7 +3,8 @@ class Dustbin {
         this.body1 = Bodies.rectangle(499, height - 65, 20, 100);
         this.body2 = Bodies.rectangle(701, height - 65, 20, 100);
         this.body3 = Bodies.rectangle(600, height - 10, 200, 20);
-        this.img = loadImage("https://projectsassets.s3.us-east-2.amazonaws.com/dustbingreen.png");//An error occured here
+        this.img = loadImage("dustbingreen.png");//An error occured here
+        //this.width = 
         //http://127.0.0.1:8887/dustbingreen.png
         //https://projectsassets.s3.us-east-2.amazonaws.com/dustbingreen.png
 
@@ -20,11 +21,12 @@ class Dustbin {
     display() {
         fill("white");
         //push();
-        rect(this.body1.position.x, this.body1.position.y, 20, 100);
+        /*rect(this.body1.position.x, this.body1.position.y, 20, 100);
         rect(this.body2.position.x, this.body2.position.y, 20, 100);
-        rect(this.body3.position.x, this.body3.position.y, 200, 20);
-
-        //image(this.img, this.body3.position.x, this.body3.position.y, 220, 120);
+        rect(this.body3.position.x, this.body3.position.y, 200, 20);*/
+        imageMode(CENTER);
+        image(this.img, 600, this.body2.position.y - 110);
+        //, this.width, this.height
         //strokeWeight(0);
         
         //stroke("white");
